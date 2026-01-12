@@ -1,0 +1,23 @@
+code,value
+OBJECTID,OBJECTID
+Number,Tee number
+Liik,Tee Liik
+Tyyp,Tee erityyp
+Nimi,Tee/tanava nimi
+Era_avalik,Omandivorm
+Suunalisus,Suunalisus
+Rada_arv,Radade arv
+Maksu_klass,Sulgemismaksu klass
+Valgustatud,Kergliiklustee on valgustatud
+Valgus_klass,Tanavavalgustuse klass
+Shape__Length,Pikkus (m)
+Laius,Laius
+EHAK_kood,EHAK kood
+Oigusakt_nr,Oigusakt_nr
+Oigusakt_kp,Oigusakt_kp
+Karto_klass,Karto_klass
+teeosa_oid,teeosa_oid
+tee_oid,tee_oid
+GlobalID,GlobalID
+SHAPE,SHAPE
+geometry,geometry

@@ -9,4 +9,4 @@ def main():
 
 if __name__ == "__main__":
     output = main()
-    print(len(output))
+    output.to_file("data/OUT/temp_output.geojson", driver="GeoJSON")

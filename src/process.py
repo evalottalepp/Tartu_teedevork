@@ -3,6 +3,7 @@
 # 3. Tõlgi integerid loogilisteks väärtusteks mapperfunktsioonidega
 # 4. Lisa teedele liiklusmahud ja kiirused
 
+import pandas as pd
 import geopandas as gpd
 
 def process_roads(all_roads_gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
@@ -18,3 +19,17 @@ def clip_to_tartu_boundary(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
         # Clip roads to Tartu boundary
         clipped_gdf = gpd.clip(gdf, tartu_boundary)
         return clipped_gdf
+
+
+def rename_columns(gdf: gpd.GeoDataFrame, columns_map: dict) -> gpd.GeoDataFrame:
+    gdf = gdf.rename(columns=columns_map)
+    return gdf
+
+
+def read_mapper(file_path: str) -> dict:
+    df = pd.read_csv(file_path)
+    mapper = dict(zip(df["code"], df["value"]))
+    return mapper
+
+if __name__ == "__main__":
+    pass
