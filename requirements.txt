@@ -1,3 +1,8 @@
 requests
 pandas
 geopandas
+
+# Optional dependencies for playbook, delete later if not needed
+folium
+matplotlib
+mapclassify
